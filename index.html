@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIG Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-nav">
+                <div class="logo-small"></div>
+                <span>GIG Construction</span>     
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#overview" class="nav-link active">📊 Overview</a></li>
+                <li><a href="#projects" class="nav-link">🏗️ Projects</a></li>
+                <li><a href="#team" class="nav-link">👷 Team</a></li>
+                <li><a href="#reports" class="nav-link">📈 Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER / DASHBOARD HERO -->
+    <header class="header cinematic-hero" id="overview">
+        <div class="hero-overlay"></div>
+        <div class="floating-logo">
+            <div class="logo"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge">🏆 Construction Management Dashboard</div>
+            <h1>GIG Control Center</h1>
+            <p class="hero-subtitle">Real-time project tracking & team management</p>
+            <div class="quick-stats">
+                <span><i class="fas fa-building"></i> 3 Active Sites</span>
+                <span><i class="fas fa-users"></i> 156 Workers</span>
+                <span><i class="fas fa-dollar-sign"></i> $24.4M Total</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <section class="main">
+
+        <!-- LEFT SIDE - PROJECTS DETAIL -->
+        <div class="left">
+            <div class="text-block">
+                <h2 id="projects">Active Projects</h2>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>High Rise Tower A</h3>
+                        <span class="status active">On Track</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <small>75% Complete</small>
+                    </div>
+                    <p>Commercial • 45 Floors • $12.5M Budget</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Suburban Homes Phase 2</h3>
+                        <span class="status delayed">1 Day Delay</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 62%"></div>
+                        </div>
+                        <small>62% Complete</small>
+                    </div>
+                    <p>Residential • 28 Units • $3.2M Budget</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>City Bridge Repair</h3>
+                        <span class="status complete">Complete</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <small>100% Complete</small>
+                    </div>
+                    <p>Infrastructure • 2.1km • $8.7M Budget</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDEBAR - KEY METRICS -->
+        <div class="right" id="team">
+            <h3>Key Metrics</h3>
+            <div class="metric-grid">
+                <div class="metric-item">
+                    <div class="metric-icon">$24.4M</div>
+                    <div class="metric-label">Total Value</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">87%</div>
+                    <div class="metric-label">Avg Progress</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">156</div>
+                    <div class="metric-label">Workers On Site</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-icon">3</div>
+                    <div class="metric-label">Active Sites</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BOTTOM SECTION - QUICK ACTIONS -->
+    <section class="bottom" id="reports">
+        <div class="card">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <div>View Invoices</div>
+            <small>45 pending payments</small>
+        </div>
+        <div class="card">
+            <i class="fas fa-tools"></i>
+            <div>Equipment Status</div>
+            <small>12/15 available</small>
+        </div>
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <div>Daily Reports</div>
+            <small>Generate PDF</small>
+        </div>
+        <div class="card">
+            <i class="fas fa-user-plus"></i>
+            <div>Timesheets</div>
+            <small>Submit hours</small>
+        </div>
+    </section>
+
+</body>
+</html>
